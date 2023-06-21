@@ -7,8 +7,10 @@ import { RiSendPlaneFill } from "react-icons/ri";
 
 const NavItem = ({ href, label }) => {
   return (
-    <Link href={href} className="mx-6 my-6 font-body font-light size text-2xl">
-      {label}
+    <Link legacyBehavior href={href}>
+      <a className="mx-6 my-6 font-body font-extralight size text-2xl hover:text-gray-400 duration-300">
+        {label}
+      </a>
     </Link>
   );
 };
@@ -22,21 +24,21 @@ const Header = () => {
         <NavItem href="/about" label="About" />
         <NavItem href="/" label="Resume" />
       </div>
-      <div className="flex gap-5 mr-12">
+      <div className="flex gap-8 mr-12">
         <RiSendPlaneFill
-          className="h-auto hover:fill-emerald-400 hover:rotate-12 hover:scale-110 duration-75"
+          className="h-auto hover:fill-emerald-400 hover:rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
           size={32}
         />
         <AiFillLinkedin
-          className="h-auto hover:fill-blue-600 hover:-rotate-6 hover:scale-110 duration-75"
+          className="h-auto hover:fill-blue-600 hover:-rotate-6 hover:scale-110 hover:cursor-pointer duration-300"
           size={32}
         />
         <AiFillInstagram
-          className="h-auto hover:fill-rose-500 hover:rotate-45 hover:scale-110 duration-75"
+          className="h-auto hover:fill-rose-500 hover:rotate-45 hover:scale-110 hover:cursor-pointer duration-300"
           size={32}
         />
         <AiFillGithub
-          className="h-auto hover:fill-violet-700 hover:-rotate-12 hover:scale-110 duration-75"
+          className="h-auto hover:fill-violet-700 hover:-rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
           size={32}
         />
       </div>
