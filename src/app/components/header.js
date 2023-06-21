@@ -8,7 +8,10 @@ import { RiSendPlaneFill } from "react-icons/ri";
 const NavItem = ({ href, label }) => {
   return (
     <Link legacyBehavior href={href}>
-      <a className="mx-6 my-6 font-body font-extralight size text-2xl hover:text-gray-400 duration-300">
+      <a
+        className="mx-6 my-6 font-body font-extralight size text-2xl hover:text-gray-400 duration-300"
+        href={href}
+      >
         {label}
       </a>
     </Link>
@@ -17,14 +20,14 @@ const NavItem = ({ href, label }) => {
 
 const Header = () => {
   return (
-    <div className="flex py-3 justify-between">
+    <div className="flex py-3 justify-between w-full">
       <div className="flex">
-        <div className="w-12" />
+        <div className="w-32" />
         <NavItem href="/" label="Home" />
         <NavItem href="/about" label="About" />
         <NavItem href="/" label="Resume" />
       </div>
-      <div className="flex gap-8 mr-12">
+      <div className="flex gap-8 mr-32">
         <RiSendPlaneFill
           className="h-auto hover:fill-emerald-400 hover:rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
           size={32}
