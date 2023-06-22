@@ -1,5 +1,7 @@
+import React from "react";
 import Image from "next/image";
 import Header from "./components/header";
+import "./animations/rotating_text.css";
 
 export default function Home() {
   return (
@@ -11,9 +13,23 @@ export default function Home() {
         <p className="ml-48 mt-48 font-body font-light text-3xl">
           Hello there! I'm
         </p>
-        <p className="ml-48 mt-8 font-light text-5xl">John Xu (Shoe)</p>
+        <div className="ml-48 mt-4">
+          <div class="wrapper">
+            <div className="words">
+              <span>John Xu (Shoe)</span>
+              <span>a fried rice expert</span>
+              <span>a code tinkerer</span>
+              <span>for socks with sandals</span>
+              <span>a graphic designer</span>
+              <span>the greatest 2048 player</span>
+              <span>a founder</span>
+              <span>against cereal before milk</span>
+              <span>John Xu (Shoe)</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="w-full h-full flex justify-end">
+      <div className="w-full h-full flex justify-end select-none">
         <Image
           src="/Home BG.svg"
           className=""
