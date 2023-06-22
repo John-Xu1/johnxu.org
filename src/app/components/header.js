@@ -28,22 +28,46 @@ const Header = () => {
         <NavItem href="/" label="Resume" />
       </div>
       <div className="flex gap-8 mr-32">
-        <RiSendPlaneFill
-          className="h-auto hover:fill-emerald-400 hover:rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
-          size={32}
-        />
-        <AiFillLinkedin
-          className="h-auto hover:fill-blue-600 hover:-rotate-6 hover:scale-110 hover:cursor-pointer duration-300"
-          size={32}
-        />
-        <AiFillInstagram
-          className="h-auto hover:fill-rose-500 hover:rotate-45 hover:scale-110 hover:cursor-pointer duration-300"
-          size={32}
-        />
-        <AiFillGithub
-          className="h-auto hover:fill-violet-700 hover:-rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
-          size={32}
-        />
+        <a
+          href="https://gmail.com"
+          className="flex justify-center"
+          target="_blank"
+        >
+          <RiSendPlaneFill
+            className="h-auto hover:fill-emerald-400 hover:rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
+            size={32}
+          />
+        </a>
+        <a
+          href="https://linkedin.com/in/john-j-xu"
+          className="flex justify-center"
+          target="_blank"
+        >
+          <AiFillLinkedin
+            className="h-auto hover:fill-blue-600 hover:-rotate-6 hover:scale-110 hover:cursor-pointer duration-300"
+            size={32}
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/john_xu22/"
+          className="flex justify-center"
+          target="_blank"
+        >
+          <AiFillInstagram
+            className="h-auto hover:fill-rose-500 hover:rotate-45 hover:scale-110 hover:cursor-pointer duration-300"
+            size={32}
+          />
+        </a>
+        <a
+          href="https://github.com/John-Xu1"
+          className="flex justify-center"
+          target="_blank"
+        >
+          <AiFillGithub
+            className="h-auto hover:fill-violet-700 hover:-rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
+            size={32}
+          />
+        </a>
       </div>
     </div>
   );
