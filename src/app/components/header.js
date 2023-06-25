@@ -28,7 +28,7 @@ const Header = () => {
       </div>
       <div className="flex gap-8 mr-32">
         <a
-          href="https://gmail.com"
+          href="mailto:john.xu@duke.edu"
           className="flex justify-center"
           target="_blank"
         >
