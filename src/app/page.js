@@ -1,9 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import "./animations/rotating_text.css";
 import "./page.css";
 
 export default function Home() {
+  const [tabIndex, setTabIndex] = useState(0);
   const projects = [
     {
       name: "Alleviate Health",
@@ -27,13 +29,16 @@ export default function Home() {
     },
   ];
 
-  const ProjectTab = ({ name, first, bgColor }) => {
+  const ProjectTab = ({ name, first, bgColor, onClick }) => {
     return (
       <div className="pl-48">
         <div
-          className={`pl w-96 hover:bg-[${bgColor}] h-[70px] hover:cursor-pointer border-white border-b ${first}`}
+          className={`pl w-[20vw] hover:bg-[${bgColor}] h-[70px] flex items-center hover:cursor-pointer border-white border-b ${first}`}
+          onClick={onClick}
         >
-          <p className="leading-[70px] text-2xl font-body font-light">{name}</p>
+          <p className="text-lg md:text-xl lg:text-2xl font-body font-light">
+            {name}
+          </p>
         </div>
       </div>
     );
@@ -61,25 +66,31 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex">
-        <div>
-          <h1 className="pl-48 pt-28 mb-16 font-heading font-regular text-5xl">
+      <div className="flex mt-28">
+        <div className="flex flex-col">
+          <h1 className="pl-48 mb-16 font-heading font-regular text-3xl md:text-4xl lg:text-5xl">
             Projects
           </h1>
+
           {projects.map((project, idx) =>
             idx !== 0 ? (
-              <ProjectTab name={project.name} bgColor={project.hoverColor} />
+              <ProjectTab
+                name={project.name}
+                bgColor={project.hoverColor}
+                onClick={() => setTabIndex(idx)}
+              />
             ) : (
               <ProjectTab
                 name={project.name}
                 bgColor={project.hoverColor}
+                onClick={() => setTabIndex(idx)}
                 first="border-t"
               />
             )
           )}
         </div>
-        <div className="flex justify-center items-center w-full h-full">
-          <img src="/Spotlight.svg" />
+        <div className="flex justify-center items-center w-full h-[550px] pl-24">
+          <img src={projects[tabIndex].img} className="" />
         </div>
       </div>
     </div>

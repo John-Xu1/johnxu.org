@@ -1,17 +1,23 @@
-<svg width="485" height="413" viewBox="0 0 485 413" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g filter="url(#filter0_d_137_4)">
+<svg width="741" height="481" viewBox="0 0 741 481" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_f_137_4)">
+<ellipse cx="370.5" cy="370.5" rx="295.5" ry="35.5" fill="#565656"/>
+</g>
 <g filter="url(#filter1_d_137_4)">
-<rect x="25" y="50.0187" width="144.385" height="312.733" rx="34.48" fill="url(#pattern0)"/>
+<path d="M154 84.4987C154 65.4559 169.437 50.0187 188.48 50.0187H263.905C282.947 50.0187 298.385 65.4559 298.385 84.4987V328.272C298.385 347.315 282.947 362.752 263.905 362.752H188.48C169.437 362.752 154 347.315 154 328.272V84.4987Z" fill="url(#pattern0)" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter2_d_137_4)">
-<rect x="314.949" y="50.0187" width="144.508" height="312.733" rx="34.48" fill="url(#pattern1)"/>
+<path d="M443.949 84.4987C443.949 65.4559 459.386 50.0187 478.429 50.0187H553.977C573.02 50.0187 588.457 65.4559 588.457 84.4987V328.272C588.457 347.315 573.02 362.752 553.977 362.752H478.429C459.386 362.752 443.949 347.315 443.949 328.272V84.4987Z" fill="url(#pattern1)" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter3_d_137_4)">
-<rect x="158.135" y="25" width="168.02" height="362.771" rx="40" fill="url(#pattern2)"/>
-</g>
+<path d="M287.135 65C287.135 42.9087 305.044 25 327.135 25H415.155C437.247 25 455.155 42.9086 455.155 65V347.771C455.155 369.862 437.247 387.771 415.155 387.771H327.135C305.044 387.771 287.135 369.862 287.135 347.771V65Z" fill="url(#pattern2)" shape-rendering="crispEdges"/>
 </g>
 <defs>
-<filter id="filter0_d_137_4" x="0" y="0" width="484.457" height="412.771" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_137_4" x="0" y="260" width="741" height="221" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="37.5" result="effect1_foregroundBlur_137_4"/>
+</filter>
+<filter id="filter1_d_137_4" x="129" y="25.0187" width="194.385" height="362.733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset/>
@@ -21,39 +27,29 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_137_4"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_137_4" result="shape"/>
 </filter>
-<filter id="filter1_d_137_4" x="14" y="43.0187" width="166.385" height="334.733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_137_4"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="5"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.0666667 0 0 0 0 0.0666667 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_137_4"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_137_4" result="shape"/>
-</filter>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_137_4" transform="scale(0.000889152 0.000410509)"/>
 </pattern>
-<filter id="filter2_d_137_4" x="303.949" y="43.0187" width="166.508" height="334.733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_d_137_4" x="418.949" y="25.0187" width="194.508" height="362.733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_137_4"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="5"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.0666667 0 0 0 0 0.0666667 0 0 0 0.25 0"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="12.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_137_4"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_137_4" result="shape"/>
 </filter>
 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image1_137_4" transform="matrix(0.000888889 0 0 0.000410739 0 -0.000279865)"/>
 </pattern>
-<filter id="filter3_d_137_4" x="147.135" y="18" width="190.02" height="384.771" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter3_d_137_4" x="262.135" y="0" width="218.02" height="412.771" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_137_4"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="5"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.0666667 0 0 0 0 0.0666667 0 0 0 0 0.0666667 0 0 0 0.25 0"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="12.5"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"/>
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_137_4"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_137_4" result="shape"/>
 </filter>
