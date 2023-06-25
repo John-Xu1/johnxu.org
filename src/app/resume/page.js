@@ -3,7 +3,7 @@ export default function Resume() {
   return (
     <div>
       <embed
-        src="/Website Resume.pdf"
+        src="/Resume.pdf"
         width="100%"
         height="800px"
         type="application/pdf"
