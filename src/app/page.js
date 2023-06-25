@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import "./animations/rotating_text.css";
 import "./page.css";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { RiSendPlaneFill } from "react-icons/ri";
 
 export default function Home() {
   const [tabIndex, setTabIndex] = useState(0);
@@ -92,6 +94,56 @@ export default function Home() {
         <div className="flex justify-center items-center w-full h-[550px] pl-24">
           <img src={projects[tabIndex].img} className="" />
         </div>
+      </div>
+      <div className="mt-24">
+        <h1 className="font-heading font-light text-4xl flex justify-center w-screen">
+          Reach out! Always happy to chat :)
+        </h1>
+        <div className="flex justify-center w-screen gap-8 py-28">
+          <a
+            href="mailto:john.xu@duke.edu"
+            className="flex justify-center"
+            target="_blank"
+          >
+            <RiSendPlaneFill
+              className="h-auto hover:fill-emerald-400 hover:rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
+              size={64}
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/john-j-xu"
+            className="flex justify-center"
+            target="_blank"
+          >
+            <AiFillLinkedin
+              className="h-auto hover:fill-blue-600 hover:-rotate-6 hover:scale-110 hover:cursor-pointer duration-300"
+              size={64}
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/john_xu22/"
+            className="flex justify-center"
+            target="_blank"
+          >
+            <AiFillInstagram
+              className="h-auto hover:fill-rose-500 hover:rotate-45 hover:scale-110 hover:cursor-pointer duration-300"
+              size={64}
+            />
+          </a>
+          <a
+            href="https://github.com/John-Xu1"
+            className="flex justify-center"
+            target="_blank"
+          >
+            <AiFillGithub
+              className="h-auto hover:fill-violet-700 hover:-rotate-12 hover:scale-110 hover:cursor-pointer duration-300"
+              size={64}
+            />
+          </a>
+        </div>
+        <p className="font-heading flex justify-center w-screen pb-8">
+          @ 2023 John Xu - Built with 🤍
+        </p>
       </div>
     </div>
   );
