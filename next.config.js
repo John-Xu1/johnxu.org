@@ -1,11 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  rewrites: [
-    {
-      source: "/(.*)",
-      destination: "/$1",
-    },
-  ],
-};
+const nextConfig = {};
 
 module.exports = nextConfig;

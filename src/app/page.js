@@ -10,22 +10,22 @@ export default function Home() {
     {
       name: "Alleviate Health",
       img: "/Alleviate Mockups.svg",
-      hoverColor: "#111A4B",
+      hoverColor: "hover:bg-[#111A4B]",
     },
     {
       name: "Meditune",
       img: "/Meditune Mockups.svg",
-      hoverColor: "#2A3562",
+      hoverColor: "hover:bg-[#2A3562]",
     },
     {
       name: "Focal",
       img: "/Focal Mockups.svg",
-      hoverColor: "#210D6A",
+      hoverColor: "hover:bg-[#210D6A]",
     },
     {
       name: "Minutes AI",
       img: "/Minutes AI Mockups.svg",
-      hoverColor: "#2D1212",
+      hoverColor: "hover:bg-[#2D1212]",
     },
   ];
 
@@ -33,7 +33,7 @@ export default function Home() {
     return (
       <div className="pl-48">
         <div
-          className={`pl w-[20vw] hover:bg-[${bgColor}] h-[70px] flex items-center hover:cursor-pointer border-white border-b ${first}`}
+          className={`h-[70px] w-[20vw] flex items-center ${bgColor} hover:cursor-pointer border-white border-b ${first}`}
           onClick={onClick}
         >
           <p className="text-lg md:text-xl lg:text-2xl font-body font-light">
