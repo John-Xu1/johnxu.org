@@ -14,7 +14,7 @@ export default function Home() {
           Hello there! I'm
         </p>
         <div className="ml-48 mt-4">
-          <div class="wrapper">
+          <div className="wrapper">
             <div className="words">
               <span>John Xu (Shoe)</span>
               <span>a fried rice expert</span>

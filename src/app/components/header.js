@@ -21,11 +21,10 @@ const NavItem = ({ href, label }) => {
 const Header = () => {
   return (
     <div className="flex py-3 justify-between w-full">
-      <div className="flex">
-        <div className="w-32" />
+      <div className="flex ml-32">
         <NavItem href="/" label="Home" />
         <NavItem href="/about" label="About" />
-        <NavItem href="/" label="Resume" />
+        <NavItem href="/resume" label="Resume" />
       </div>
       <div className="flex gap-8 mr-32">
         <a
