@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jost.className}>
       <body>
-        {true && <Header />}
+        <Header />
         {children}
       </body>
     </html>

@@ -1,0 +1,8 @@
+.preview-container {
+    background: url('../../public/Home BG.svg');
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 100vh;
+    width: 100%;
+}
