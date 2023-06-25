@@ -7,12 +7,13 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { usePathname } from "next/navigation";
 
-const NavItem = ({ href, label }) => {
+const NavItem = ({ href, label, target }) => {
   return (
     <Link legacyBehavior href={href}>
       <a
         className="mx-6 my-6 font-body font-extralight size text-2xl hover:text-gray-400 duration-300"
         href={href}
+        target={target}
       >
         {label}
       </a>
@@ -30,7 +31,7 @@ const Header = () => {
             <div className="flex ml-32">
               <NavItem href="/" label="Home" />
               <NavItem href="/about" label="About" />
-              <NavItem href="/resume" label="Resume" />
+              <NavItem href="/resume" label="Resume" target="_blank" />
             </div>
             <div className="flex gap-8 mr-32">
               <a
