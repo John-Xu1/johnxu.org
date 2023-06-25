@@ -25,13 +25,13 @@ const Header = () => {
   console.log(usePathname());
   return (
     <>
-      {usePathname() !== "/resume" && (
+      {usePathname() !== "/resume" && usePathname() !== "/resume.pdf" && (
         <>
           <div className="flex py-3 justify-between w-100vw">
             <div className="flex ml-32">
               <NavItem href="/" label="Home" />
               <NavItem href="/about" label="About" />
-              <NavItem href="/resume" label="Resume" target="_blank" />
+              <NavItem href="/resume.pdf" label="Resume" target="_blank" />
             </div>
             <div className="flex gap-8 mr-32">
               <a
