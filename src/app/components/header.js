@@ -30,7 +30,7 @@ const Header = () => {
             <div className="flex ml-32">
               <NavItem href="/" label="Home" />
               <NavItem href="/about" label="About" />
-              <NavItem href="/resume" target="_blank" label="Resume" />
+              <NavItem href="/resume" label="Resume" />
             </div>
             <div className="flex gap-8 mr-32">
               <a
