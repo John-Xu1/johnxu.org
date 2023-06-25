@@ -2,12 +2,7 @@ export default function Resume() {
   const pdfUrl = "/resume.pdf?timestamp=" + Date.now();
   return (
     <div>
-      <embed
-        src="/Resume.pdf"
-        width="100%"
-        height="800px"
-        type="application/pdf"
-      />
+      <iframe src="/Resume.pdf" className="w-full h-screen" title="Resume" />
     </div>
   );
 }
