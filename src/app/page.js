@@ -1,20 +1,23 @@
 import React from "react";
 import Image from "next/image";
-import Header from "./components/header";
 import "./animations/rotating_text.css";
 
 export default function Home() {
+  const projects = [
+    { name: "Alleviate Health", img: "/Alleviate Mockups.svg" },
+    { name: "Meditune", img: "/Meditune Mockups.svg" },
+    { name: "Focal", img: "/Focal Mockups.svg" },
+    { name: "Minutes AI", img: "/Minutes AI Mockups.svg" },
+  ];
+
   return (
     <div className="relative">
-      <div className="absolute z-50 w-full">
-        <Header />
-      </div>
       <div className="absolute z-10">
         <p className="ml-48 mt-48 font-body font-light text-3xl">
           Hello there! I'm
         </p>
         <div className="ml-48 mt-4">
-          <div className="wrapper">
+          <div className="wrapper bg-transparent">
             <div className="words">
               <span>John Xu (Shoe)</span>
               <span>a fried rice expert</span>

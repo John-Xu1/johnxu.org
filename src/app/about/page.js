@@ -4,7 +4,6 @@ import { TbWindowMaximize } from "react-icons/tb";
 export default function About() {
   return (
     <div>
-      <Header />
       <div className="flex mx-32 mt-14">
         <div>
           <h1 className="font-heading text-3xl">A little more about me...</h1>
