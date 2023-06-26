@@ -33,7 +33,7 @@ export default function Home() {
 
   const ProjectTab = ({ name, first, bgColor, onClick }) => {
     return (
-      <div className="pl-48">
+      <div className="pl-[12vw]">
         <div
           className={`h-[70px] w-[20vw] flex items-center ${bgColor} hover:cursor-pointer border-white border-b ${first}`}
           onClick={onClick}
@@ -49,28 +49,24 @@ export default function Home() {
   return (
     <div>
       <div className="preview-container">
-        <p className="pl-48 pt-48 font-body font-light text-3xl">
-          Hello there! I'm
+        <div className="background-image"></div>
+        <p className="pl-0 md:pl-[10vw] pt-48 font-body font-extralight text-4xl md:text-5xl text-center md:text-left">
+          John Xu (Shoe) is a
         </p>
-        <div className="pl-48 pt-4">
+        <div className="pl-0 md:pl-[10vw] pt-4">
           <div className="wrapper">
             <div className="words">
-              <span>John Xu (Shoe)</span>
-              <span>a fried rice expert</span>
-              <span>a code tinkerer</span>
-              <span>for socks with sandals</span>
-              <span>a graphic designer</span>
-              <span>the greatest 2048 player</span>
-              <span>a founder</span>
-              <span>against cereal before milk</span>
-              <span>John Xu (Shoe)</span>
+              <span>code tinkerer</span>
+              <span>figma fiddler</span>
+              <span>founder</span>
+              <span>code tinkerer</span>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex mt-28">
+      <div className="flex mt-[10vh]">
         <div className="flex flex-col">
-          <h1 className="pl-48 mb-16 font-heading font-regular text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="pl-[12vw] mb-16 font-heading font-regular text-3xl md:text-4xl lg:text-5xl">
             Projects
           </h1>
 
@@ -91,7 +87,7 @@ export default function Home() {
             )
           )}
         </div>
-        <div className="flex justify-center items-center w-full h-[550px] pl-24">
+        <div className="flex justify-center items-center w-full h-[550px]">
           <img src={projects[tabIndex].img} className="" />
         </div>
       </div>
@@ -142,7 +138,7 @@ export default function Home() {
           </a>
         </div>
         <p className="font-heading flex justify-center w-screen pb-8">
-          @ 2023 John Xu - Built with 🤍
+          Designed and Developed with 🤍 and 🍵
         </p>
       </div>
     </div>

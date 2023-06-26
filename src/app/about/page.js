@@ -44,6 +44,7 @@ export default function About() {
           height={0}
           style={{ width: "100%", height: "auto" }}
           className="select-none"
+          unoptimized
         />
       </div>
     </div>
