@@ -68,12 +68,16 @@ export default function About() {
 
   const AboutPic = () => {
     return (
-      <Image
+      <img
         src="/About Headshot.svg"
         width={0}
         height={0}
-        style={{ width: "100%", height: "auto", maxWidth: "500px" }}
-        className="select-none mt-8"
+        style={{
+          width: "100%",
+          height: "auto",
+          maxWidth: "500px",
+        }}
+        className="select-none"
         unoptimized
       />
     );
@@ -84,11 +88,14 @@ export default function About() {
       <div className="flex flex-col lg:flex-row mx-[10vw] mt-14 justify-center items-center">
         {!isMobile ? (
           <>
-            <IntroBlurb /> <AboutPic />
+            <div className="mb-16">
+              <IntroBlurb />
+            </div>{" "}
+            <AboutPic />
           </>
         ) : (
           <>
-            <AboutPic /> <div className="h-16" /> <IntroBlurb />{" "}
+            <AboutPic /> <div className="h-16" /> <IntroBlurb />
             <div className="h-16" />
           </>
         )}
