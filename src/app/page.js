@@ -33,12 +33,12 @@ export default function Home() {
 
   const ProjectTab = ({ name, first, bgColor, onClick }) => {
     return (
-      <div className="pl-[12vw]">
+      <div className="pl-0 sm:pl-[12vw] flex justify-center items-center">
         <div
-          className={`h-[70px] w-[20vw] flex items-center ${bgColor} hover:cursor-pointer border-white border-b ${first}`}
+          className={`h-[70px] w-[80vw] sm:w-[20vw] flex items-center ${bgColor} hover:cursor-pointer border-white border-b ${first}`}
           onClick={onClick}
         >
-          <p className="text-lg md:text-xl lg:text-2xl font-body font-light">
+          <p className="w-full text-xl lg:text-2xl text-center sm:text-start font-body font-light">
             {name}
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function Home() {
     <div>
       <div className="preview-container">
         <div className="background-image"></div>
-        <p className="pl-0 md:pl-[10vw] pt-48 font-body font-extralight text-4xl md:text-5xl text-center md:text-left">
+        <p className="pl-0 md:pl-[10vw] pt-48 font-body font-extralight text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
           John Xu (Shoe) is a
         </p>
         <div className="pl-0 md:pl-[10vw] pt-4">
@@ -64,9 +64,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex mt-[10vh]">
+      <div className="flex flex-col sm:flex-row mt-[10vh]">
         <div className="flex flex-col">
-          <h1 className="pl-[12vw] mb-16 font-heading font-regular text-3xl md:text-4xl lg:text-5xl">
+          <h1 className="pl-0 sm:pl-[12vw] mb-16 font-heading font-regular text-4xl lg:text-5xl text-center sm:text-start">
             Projects
           </h1>
 

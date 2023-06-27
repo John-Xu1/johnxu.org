@@ -94,7 +94,7 @@ const Header = () => {
               </div>
             )}
           </div>
-          <hr />
+          <hr className="border-[0.5px] border-gray-400 " />
         </>
       )}
     </>

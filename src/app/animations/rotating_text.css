@@ -9,7 +9,7 @@ span {
 
 @media (max-width: 768px) {
     span {
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
     }
     .wrapper {
