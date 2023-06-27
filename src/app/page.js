@@ -35,7 +35,7 @@ export default function Home() {
     return (
       <div className="pl-0 sm:pl-[12vw] flex justify-center items-center">
         <div
-          className={`h-[70px] w-[80vw] sm:w-[20vw] flex items-center ${bgColor} hover:cursor-pointer border-white border-b ${first}`}
+          className={`h-[70px] w-[80vw] sm:w-[20vw] flex items-center ${bgColor} duration-200 hover:cursor-pointer border-white border-b ${first}`}
           onClick={onClick}
         >
           <p className="w-full text-xl lg:text-2xl text-center sm:text-start font-body font-light">
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row mt-[10vh]">
+      <div className="projects-container flex flex-col sm:flex-row -mt-24 sm:mt-[2vw] md:mt-[10vw]">
         <div className="flex flex-col">
           <h1 className="pl-0 sm:pl-[12vw] mb-16 font-heading font-regular text-4xl lg:text-5xl text-center sm:text-start">
             Projects
@@ -87,8 +87,8 @@ export default function Home() {
             )
           )}
         </div>
-        <div className="flex justify-center items-center w-full h-[550px]">
-          <img src={projects[tabIndex].img} className="" />
+        <div className="flex justify-center items-center w-full h-[550px] select-none">
+          <img src={projects[tabIndex].img} className="select-none" />
         </div>
       </div>
       <div className="mt-24">

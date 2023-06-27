@@ -45,7 +45,7 @@ export default function About() {
         <ul className="list-disc ml-4">
           <li>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@johnxu3199/videos"
               target="_blank"
               className="font-body font-extralight underline"
             >
