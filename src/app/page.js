@@ -92,7 +92,7 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-24">
-        <h1 className="font-heading font-light text-4xl flex justify-center w-screen">
+        <h1 className="font-heading font-light text-2xl sm:text-4xl flex justify-center w-screen text-center">
           Reach out! Always happy to chat :)
         </h1>
         <div className="flex justify-center w-screen gap-8 py-28">
