@@ -1,13 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import "./animations/rotating_text.css";
+import { initializeTiltEffect } from "./animations/tilt_parallax";
 import "./page.css";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { RiSendPlaneFill } from "react-icons/ri";
+import Head from "next/head";
 
 export default function Home() {
   const [tabIndex, setTabIndex] = useState(0);
+
   const projects = [
     {
       name: "Alleviate Health",
@@ -46,8 +49,15 @@ export default function Home() {
     );
   };
 
+  useEffect(() => {
+    initializeTiltEffect();
+  }, []);
+
   return (
     <div>
+      <Head>
+        <script src="/animations/tilt_parallax.js"></script>
+      </Head>
       <div className="preview-container">
         <div className="background-image"></div>
         <p className="pl-0 md:pl-[10vw] pt-48 font-body font-extralight text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
@@ -64,7 +74,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="projects-container flex flex-col sm:flex-row -mt-24 sm:mt-[2vw] md:mt-[10vw]">
+      <div className="flex flex-col sm:flex-row -mt-24 sm:mt-[2vw] md:mt-[10vw]">
         <div className="flex flex-col">
           <h1 className="pl-0 sm:pl-[12vw] mb-16 font-heading font-regular text-4xl lg:text-5xl text-center sm:text-start">
             Projects
@@ -88,7 +98,10 @@ export default function Home() {
           )}
         </div>
         <div className="flex justify-center items-center w-full h-[550px] select-none">
-          <img src={projects[tabIndex].img} className="select-none" />
+          <img
+            src={projects[tabIndex].img}
+            className="projects-container select-none"
+          />
         </div>
       </div>
       <div className="mt-24">
