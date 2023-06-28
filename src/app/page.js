@@ -97,7 +97,7 @@ export default function Home() {
             )
           )}
         </div>
-        <div className="flex justify-center items-center w-full h-[550px] select-none">
+        <div className="flex justify-center items-center w-full h-[550px] select-none hover:scale-105 duration-500">
           <img
             src={projects[tabIndex].img}
             className="projects-container select-none"

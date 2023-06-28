@@ -1,14 +1,14 @@
 export const initializeTiltEffect = () => {
   const container = document.querySelector(".projects-container");
-  const transitionDuration = 0.1; // Adjust the duration as needed
+  const transitionDuration = 0.5; // Adjust the duration as needed
 
   const adjustTilt = (e) => {
     const containerWidth = container.offsetWidth;
     const containerHeight = container.offsetHeight;
     const xAxisRotation =
-      -30 * ((e.clientY - containerHeight) / 2 / containerHeight);
+      -50 * ((e.clientY - containerHeight) / 2 / containerHeight);
     const yAxisRotation =
-      30 * ((e.clientX - containerWidth) / 2 / containerWidth);
+      50 * ((e.clientX - containerWidth) / 2 / containerWidth);
 
     container.style.transform = `perspective(1000px) rotateX(${xAxisRotation}deg) rotateY(${yAxisRotation}deg)`;
   };
