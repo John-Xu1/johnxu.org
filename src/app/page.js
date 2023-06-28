@@ -97,8 +97,16 @@ export default function Home() {
             )
           )}
         </div>
-        <div className="projects-container flex justify-center items-center w-full h-auto select-none hover:scale-105 duration-500 hover:cursor-pointer">
-          <img src={projects[tabIndex].img} className="select-none" />
+        <div className="flex relative justify-center items-center w-full h-auto select-none">
+          <div className="group projects-container w-full flex items-center justify-center">
+            <img
+              src={projects[tabIndex].img}
+              className="select-none hover:scale-105 duration-500 hover:cursor-pointer absolute z-0"
+            />
+            <p className="absolute z-10 bg-opacity-70 bg-black text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150">
+              Click on me to learn more
+            </p>
+          </div>
         </div>
       </div>
       <div className="mt-24">
