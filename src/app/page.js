@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row -mt-24 sm:mt-[2vw] md:mt-[10vw]">
+      <div className="flex flex-col sm:flex-row -mt-24 sm:mt-[2vw] md:mt-[10vw] h-[550px]">
         <div className="flex flex-col">
           <h1 className="pl-0 sm:pl-[12vw] mb-16 font-heading font-regular text-4xl lg:text-5xl text-center sm:text-start">
             Projects
@@ -97,11 +97,8 @@ export default function Home() {
             )
           )}
         </div>
-        <div className="flex justify-center items-center w-full h-[550px] select-none hover:scale-105 duration-500">
-          <img
-            src={projects[tabIndex].img}
-            className="projects-container select-none"
-          />
+        <div className="projects-container flex justify-center items-center w-full h-auto select-none hover:scale-105 duration-500 hover:cursor-pointer">
+          <img src={projects[tabIndex].img} className="select-none" />
         </div>
       </div>
       <div className="mt-24">

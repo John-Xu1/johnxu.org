@@ -25,8 +25,8 @@ export const initializeTiltEffect = () => {
   };
 
   container.addEventListener("mouseenter", () => {
-    container.addEventListener("mousemove", adjustTilt);
     resetTilt();
+    container.addEventListener("mousemove", adjustTilt);
   });
 
   container.addEventListener("mouseleave", () => {
