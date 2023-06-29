@@ -1,6 +1,6 @@
 export const initializeTiltEffect = () => {
   const container = document.querySelector(".projects-container");
-  const transitionDuration = 0.5; // Adjust the duration as needed
+  const transitionDuration = 0.5;
   const sensitivity = 20;
 
   const adjustTilt = (e) => {
@@ -21,8 +21,6 @@ export const initializeTiltEffect = () => {
     container.style.transition = `transform ${transitionDuration}s ease`;
     container.style.transform =
       "perspective(1000px) rotateX(0deg) rotateY(0deg)";
-
-    // Reset the transition property after the transition completes
     setTimeout(() => {
       container.style.transition = "ease";
     }, transitionDuration * 1000);

@@ -34,6 +34,8 @@ export default function Home() {
     },
   ];
 
+  const projectsLinks = ["/alleviate", "/meditune", "/focal", "/minutesai"];
+
   const ProjectTab = ({ name, first, bgColor, onClick }) => {
     return (
       <div className="pl-0 sm:pl-[12vw] flex justify-center items-center">
@@ -98,15 +100,17 @@ export default function Home() {
           )}
         </div>
         <div className="flex w-full h-full select-none mt-16 sm:mt-0">
-          <div className="projects-container w-full h-full flex items-center justify-center group">
-            <img
-              src={projects[tabIndex].img}
-              className="select-none group-hover:scale-105 duration-500 group-hover:cursor-pointer"
-            />
-            <p className="absolute z-10 bg-black text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
-              Click on me to learn more
-            </p>
-          </div>
+          <a href={projectsLinks[tabIndex]} className="w-full">
+            <div className="projects-container w-full h-full flex items-center justify-center group">
+              <img
+                src={projects[tabIndex].img}
+                className="select-none group-hover:scale-105 duration-500 group-hover:cursor-pointer"
+              />
+              <p className="absolute z-10 bg-black text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
+                Click on me to learn more
+              </p>
+            </div>
+          </a>
         </div>
       </div>
       <div className="mt-24">
