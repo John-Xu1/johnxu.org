@@ -57,7 +57,7 @@ export default function ProjectDetails({
           height: "auto",
           maxWidth: "800px",
         }}
-        className="select-none"
+        className={`select-none ${header === "Minutes AI" && "mt-16"}`}
         unoptimized
       />
     );
