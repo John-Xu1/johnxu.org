@@ -21,9 +21,13 @@
     .background-image {
       opacity: 0.5;
     }
+    .projects-box {
+      margin-top: -150px;
+  }
   }
 
-  @media (max-width: 600px) {
+
+  @media (max-width: 640px) {
     .projects-box {
         margin-top: -250px;
     }

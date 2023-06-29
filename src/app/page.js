@@ -98,7 +98,7 @@ export default function Home() {
           )}
         </div>
         <div className="flex w-full h-full select-none mt-16 sm:mt-0">
-          <div className="projects-container w-full flex items-center justify-center group">
+          <div className="projects-container w-full h-full flex items-center justify-center group">
             <img
               src={projects[tabIndex].img}
               className="select-none group-hover:scale-105 duration-500 group-hover:cursor-pointer"
