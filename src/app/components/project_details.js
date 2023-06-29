@@ -4,6 +4,7 @@ import Header from "../components/header";
 import { TbWindowMaximize } from "react-icons/tb";
 import { useEffect, useState } from "react";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import { initializeTiltEffect } from "../animations/tilt_parallax";
 
 export default function ProjectDetails({
   img,
@@ -19,6 +20,7 @@ export default function ProjectDetails({
       setIsMobile(window.innerWidth < 1024);
     };
 
+    initializeTiltEffect();
     handleResize();
     window.addEventListener("resize", handleResize);
 
@@ -48,18 +50,31 @@ export default function ProjectDetails({
 
   const AboutPic = () => {
     return (
-      <img
-        src={img}
-        width={0}
-        height={0}
-        style={{
-          width: "100%",
-          height: "auto",
-          maxWidth: "800px",
-        }}
-        className={`select-none ${header === "Minutes AI" && "mt-16"}`}
-        unoptimized
-      />
+      //   <img
+      //     src={img}
+      //     width={0}
+      //     height={0}
+      //     style={{
+      //       width: "100%",
+      //       height: "auto",
+      //       maxWidth: "800px",
+      //     }}
+      //     className={`select-none ${header === "Minutes AI" && "mt-16"}`}
+      //     unoptimized
+      //   />
+      <a href="/" className="w-full">
+        <div className="projects-container w-full h-full flex items-center justify-center group">
+          <img
+            src={img}
+            className={`select-none max-w-5xl group-hover:scale-105 duration-500 group-hover:cursor-pointer ${
+              header === "Minutes AI" && "mt-16"
+            }`}
+          />
+          <p className="absolute z-10 bg-black text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
+            Click on me to go back
+          </p>
+        </div>
+      </a>
     );
   };
 
