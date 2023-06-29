@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row -mt-24 sm:mt-[2vw] md:mt-[10vw] h-[550px]">
+      <div className="projects-box flex flex-col sm:flex-row -mt-24 sm:mt-[2vw] md:mt-[10vw] h-[550px]">
         <div className="flex flex-col">
           <h1 className="pl-0 sm:pl-[12vw] mb-16 font-heading font-regular text-4xl lg:text-5xl text-center sm:text-start">
             Projects
@@ -97,20 +97,20 @@ export default function Home() {
             )
           )}
         </div>
-        <div className="flex relative justify-center items-center w-full h-auto select-none">
-          <div className="group projects-container w-full flex items-center justify-center">
+        <div className="flex w-full h-full select-none mt-16 sm:mt-0">
+          <div className="projects-container w-full flex items-center justify-center group">
             <img
               src={projects[tabIndex].img}
-              className="select-none hover:scale-105 duration-500 hover:cursor-pointer absolute z-0"
+              className="select-none group-hover:scale-105 duration-500 group-hover:cursor-pointer"
             />
-            <p className="absolute z-10 bg-opacity-70 bg-black text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150">
+            <p className="absolute z-10 bg-black text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
               Click on me to learn more
             </p>
           </div>
         </div>
       </div>
       <div className="mt-24">
-        <h1 className="font-heading font-light text-2xl sm:text-4xl flex justify-center w-screen text-center">
+        <h1 className="font-heading font-light text-2xl sm:text-4xl flex justify-center w-screen text-center mt-80 sm:mt-0">
           Reach out! Always happy to chat :)
         </h1>
         <div className="flex justify-center w-screen gap-8 py-28">
