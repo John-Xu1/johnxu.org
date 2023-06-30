@@ -56,9 +56,9 @@ export default function ProjectDetails({
         <div className="projects-container w-full h-full flex items-center justify-center group">
           <img
             src={img}
-            className={`select-none h-96 sm:h-full max-w-5xl group-hover:scale-105 duration-500 group-hover:cursor-pointer ${
-              header === "Minutes AI" && "mt-16"
-            }`}
+            className={`select-none max-w-5xl group-hover:scale-105 duration-500 group-hover:cursor-pointer ${
+              header === "Minutes AI" ? "h-72 mt-16" : "mt-0 h-96"
+            } sm:h-full`}
           />
           <p className="absolute z-10 bg-red-600 text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
             Click on me to go back
