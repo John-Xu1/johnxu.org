@@ -13,7 +13,6 @@ const NavItem = ({ href, label, target }) => {
     <Link legacyBehavior href={href}>
       <a
         className="mx-6 my-6 font-body font-extralight size text-2xl hover:text-gray-400 duration-300"
-        href={href}
         target={target}
       >
         {label}
@@ -38,14 +37,13 @@ const Header = () => {
     };
   }, []);
 
-  console.log(usePathname());
   return (
     <>
       {usePathname() !== "/resume" && usePathname() !== "/resume.pdf" && (
         <>
           <div className="flex py-3 justify-center sm:justify-between w-100vw">
             <div className="flex ml-0 sm:ml-[5vw]">
-              <NavItem href="/" label="Home" />
+              <NavItem href="/#home" label="Home" />
               <NavItem href="/about" label="About" />
               <NavItem href="/resume.pdf" label="Resume" target="_blank" />
             </div>

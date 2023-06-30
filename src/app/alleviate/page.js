@@ -11,7 +11,7 @@ export default function About() {
       img="/Alleviate Mockups.svg"
       header="Alleviate Health"
       link="https://alleviatehealth.care"
-      description="Web-platform that allows for seamless HSA/FSA shopping experience. Scrapes from largest vendors (CVS, Walmart, Walgreens) and allows users to purchase products without complicated reimbursement process."
+      description="Alleviate Health is a web-platform that allows for seamless HSA/FSA shopping experience. Scrapes from largest vendors (CVS, Walmart, Walgreens) and allows users to purchase products without complicated reimbursement process."
       libs="NextJS, Chakra UI, BeautifulSoup, Firebase, Auth0, Axios"
     />
   );

@@ -11,7 +11,7 @@ export default function About() {
       img="/Meditune Mockups.svg"
       header="Meditune"
       link="https://meditone-website.vercel.app/"
-      description="Mobile app that helps those with tinnitus relieve their symptoms through applying a sound-notching algorithm that filters out specific frequencies on users’ Spotify playlists."
+      description="Meditune is a mobile app that helps those with tinnitus relieve their symptoms through applying a sound-notching algorithm that filters out specific frequencies on users’ Spotify playlists."
       libs="Flutter, FFmpeg, Firebase"
     />
   );

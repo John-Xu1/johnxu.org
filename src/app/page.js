@@ -7,9 +7,18 @@ import "./page.css";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { RiSendPlaneFill } from "react-icons/ri";
 import Head from "next/head";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  increment,
+  decrement,
+  changeTo,
+} from "./redux/features/counter/counterSlice";
+import Link from "next/link";
 
 export default function Home() {
   const [tabIndex, setTabIndex] = useState(0);
+  const projIndex = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
 
   const projects = [
     {
@@ -76,6 +85,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div id="projects" />
       <div className="projects-box flex flex-col sm:flex-row -mt-24 sm:mt-[2vw] md:mt-[10vw] h-[550px]">
         <div className="flex flex-col">
           <h1 className="pl-0 sm:pl-[12vw] mb-16 font-heading font-regular text-4xl lg:text-5xl text-center sm:text-start">
@@ -87,30 +97,30 @@ export default function Home() {
               <ProjectTab
                 name={project.name}
                 bgColor={project.hoverColor}
-                onClick={() => setTabIndex(idx)}
+                onClick={() => dispatch(changeTo(idx))}
               />
             ) : (
               <ProjectTab
                 name={project.name}
                 bgColor={project.hoverColor}
-                onClick={() => setTabIndex(idx)}
+                onClick={() => dispatch(changeTo(idx))}
                 first="border-t"
               />
             )
           )}
         </div>
         <div className="flex w-full h-full select-none mt-16 sm:mt-0">
-          <a href={projectsLinks[tabIndex]} className="w-full">
+          <Link href={projectsLinks[projIndex]} className="w-full">
             <div className="projects-container w-full h-full flex items-center justify-center group">
               <img
-                src={projects[tabIndex].img}
+                src={projects[projIndex].img}
                 className="select-none group-hover:scale-105 duration-500 group-hover:cursor-pointer"
               />
-              <p className="absolute z-10 bg-black text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
+              <p className="absolute z-10 bg-green-800 text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
                 Click on me to learn more
               </p>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="mt-24">

@@ -11,7 +11,7 @@ export default function About() {
       img="/Minutes AI Mockups.svg"
       header="Minutes AI"
       link="https://github.com/John-Xu1/minutes-ai"
-      description="Web portal that automatically generates meeting minutes from an mp4 or mp3 recording of a meeting. Uses Whisper to transcribe the video into text and then GPT-3.5-turbo to dynamically generate a summary of the meeting."
+      description="Minutes AI is a web portal that automatically generates meeting minutes from an mp4 or mp3 recording of a meeting. Uses Whisper to transcribe the video into text and then GPT-3.5-turbo to dynamically generate a summary of the meeting."
       libs="ReactJS, OpenAI chat completions, Whisper ASR"
     />
   );

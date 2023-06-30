@@ -5,6 +5,7 @@ import { TbWindowMaximize } from "react-icons/tb";
 import { useEffect, useState } from "react";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { initializeTiltEffect } from "../animations/tilt_parallax";
+import Link from "next/link";
 
 export default function ProjectDetails({
   img,
@@ -32,14 +33,15 @@ export default function ProjectDetails({
   const IntroBlurb = () => {
     return (
       <div className="ml-0 md:ml-16 mt-16 md:mt-0">
-        <h1 className="font-heading text-3xl font-medium flex">
-          {header}
-          <span>
-            <a href={link} target="_blank">
-              <RxOpenInNewWindow className="ml-2 hover:text-gray-400 hover:cursor-pointer duration-150 " />
-            </a>
-          </span>
-        </h1>
+        <div className="flex">
+          <h1 className="font-heading text-3xl font-medium flex">{header}</h1>
+          <Link href={link} target="_blank">
+            <RxOpenInNewWindow
+              className="ml-2 hover:text-gray-400 hover:cursor-pointer duration-150"
+              size={32}
+            />
+          </Link>
+        </div>
         <p className="font-body font-light mt-8">{description}</p>
         <p className="font-body font-medium text-gray-400">
           <br /> Libraries/Frameworks/APIs: {libs}
@@ -50,19 +52,7 @@ export default function ProjectDetails({
 
   const AboutPic = () => {
     return (
-      //   <img
-      //     src={img}
-      //     width={0}
-      //     height={0}
-      //     style={{
-      //       width: "100%",
-      //       height: "auto",
-      //       maxWidth: "800px",
-      //     }}
-      //     className={`select-none ${header === "Minutes AI" && "mt-16"}`}
-      //     unoptimized
-      //   />
-      <a href="/" className="w-full">
+      <Link href="/#projects" className="w-full">
         <div className="projects-container w-full h-full flex items-center justify-center group">
           <img
             src={img}
@@ -70,11 +60,11 @@ export default function ProjectDetails({
               header === "Minutes AI" && "mt-16"
             }`}
           />
-          <p className="absolute z-10 bg-black text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
+          <p className="absolute z-10 bg-red-600 text-white p-4 rounded-lg text-lg scale-0 overflow-hidden group-hover:scale-100 duration-150 group-hover:cursor-pointer font-body">
             Click on me to go back
           </p>
         </div>
-      </a>
+      </Link>
     );
   };
 

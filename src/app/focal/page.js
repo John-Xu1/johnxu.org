@@ -12,7 +12,7 @@ export default function About() {
       img="/Focal Mockups.svg"
       header="Focal"
       link="https://getfocal.app/"
-      description="Centralized productivity platform that helps users be productive. The app includes features that aids people in feeling motivated to work, organizing their todos, focusing on tasks, and monitor their progress."
+      description="Focal is a centralized productivity platform that helps users be productive. The app includes features that aids people in feeling motivated to work, organizing their todos, focusing on tasks, and monitor their progress."
       libs="Flutter, Firebase, Google Analytics, Facebook SDK"
     />
   );
