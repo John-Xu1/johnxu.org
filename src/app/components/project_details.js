@@ -17,11 +17,11 @@ export default function ProjectDetails({
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    initializeTiltEffect();
     const handleResize = () => {
       setIsMobile(window.innerWidth < 1024);
     };
 
-    initializeTiltEffect();
     handleResize();
     window.addEventListener("resize", handleResize);
 
@@ -56,7 +56,7 @@ export default function ProjectDetails({
         <div className="projects-container w-full h-full flex items-center justify-center group">
           <img
             src={img}
-            className={`select-none max-w-5xl group-hover:scale-105 duration-500 group-hover:cursor-pointer ${
+            className={`select-none h-96 sm:h-full max-w-5xl group-hover:scale-105 duration-500 group-hover:cursor-pointer ${
               header === "Minutes AI" && "mt-16"
             }`}
           />
