@@ -44,20 +44,12 @@ export default function About() {
         </p>
         <ul className="list-disc ml-4">
           <li>
-            <a
-              href="https://www.youtube.com/@johnxu3199/videos"
-              target="_blank"
-              className="font-body font-extralight underline"
-            >
+            <a href="/travel" className="font-body font-extralight underline">
               Travel vlog/montage creation
             </a>
           </li>
           <li>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              className="font-body font-extralight underline"
-            >
+            <a href="/design" className="font-body font-extralight underline">
               Pro bono logo design
             </a>
           </li>
