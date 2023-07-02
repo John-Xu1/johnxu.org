@@ -26,7 +26,7 @@ export default function Design() {
           ))}
         </div>
         <div className="flex">
-          <img src="/logos/simpoli logo.png" className="m-4 h-96 w-auto" />
+          <img src="/logos/Simpoli Logo.png" className="m-4 h-96 w-auto" />
           <div>
             {logos3.map((logo) => (
               <img src={logo} className="m-4 h-48 w-auto min-w-max" />
