@@ -50,7 +50,7 @@ export default function About() {
           </li>
           <li>
             <a href="/design" className="font-body font-extralight underline">
-              Pro bono logo design
+              Pro bono design
             </a>
           </li>
         </ul>
@@ -61,7 +61,7 @@ export default function About() {
   const AboutPic = () => {
     return (
       <img
-        src="/About Headshot.svg"
+        src="/About Headshot.png"
         width={0}
         height={0}
         style={{
