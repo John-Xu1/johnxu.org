@@ -109,9 +109,9 @@ export default function Home() {
             )
           )}
         </div>
-        <div className="flex w-full h-full select-none mt-16 sm:mt-0">
+        <div className="flex w-full h-full select-none mt-16 sm:mt-0 flex-col justify-center">
           <Link href={projectsLinks[projIndex]} className="w-full">
-            <div className="projects-container w-full h-full flex items-center justify-center group">
+            <div className="projects-container w-full h-full flex items-center justify-center align-middle group">
               <img
                 src={projects[projIndex].img}
                 className="select-none group-hover:scale-105 duration-500 group-hover:cursor-pointer"
@@ -121,6 +121,9 @@ export default function Home() {
               </p>
             </div>
           </Link>
+          <p className="text-center -mt-8 text-gray-400 font-body text-lg">
+            (Click on picture to learn more)
+          </p>
         </div>
       </div>
       <div className="mt-24">
