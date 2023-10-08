@@ -53,6 +53,11 @@ export default function About() {
               Pro bono design
             </a>
           </li>
+          <li>
+            <a href="/lofi" className="font-body font-extralight underline">
+              Lofi remix production
+            </a>
+          </li>
         </ul>
       </div>
     );
