@@ -45,7 +45,7 @@ const Header = () => {
             <div className="flex ml-0 sm:ml-[5vw]">
               <NavItem href="/#home" label="Home" />
               <NavItem href="/about" label="About" />
-              <NavItem href="/resume.pdf" label="Resume" target="_blank" />
+              {/* <NavItem href="/resume.pdf" label="Resume" target="_blank" /> */}
             </div>
             {!isMobile && (
               <div className="flex gap-8 mr-[5vw]">
