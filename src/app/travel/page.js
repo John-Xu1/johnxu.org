@@ -3,6 +3,7 @@ export default function Travel() {
     "https://www.youtube.com/embed/fnVKR1cW-X0",
     "https://www.youtube.com/embed/xwwTNmM-EEE",
     "https://www.youtube.com/embed/5J8vW7HspkI",
+    "https://www.youtube.com/embed/KsN0WOGfo-c?si=tzUKC8owaXDDFND3",
   ];
   return (
     <div className="w-full flex flex-col items-center">
