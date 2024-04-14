@@ -29,10 +29,10 @@ export default function About() {
           Computer Science & Finance at Duke.
           <br />
           <br />
-          As someone who born and raised in the Silicon Valley, I’m excited by
-          the ways technology can change the way we look at the world. I can
-          recount countless moments growing up where I would see a piece of tech
-          that seemed nothing short of magic.
+          As someone who born and raised in the Bay Area, I’m excited by the
+          ways technology can change the way we look at the world. I can recount
+          countless moments growing up where I would see a piece of tech that
+          seemed nothing short of magic.
           <br />
           <br />
           In the future, I hope to help create something that invokes in others
@@ -40,12 +40,12 @@ export default function About() {
           believe in the impossible.
           <br />
           <br />
-          Some things I’ve gotten into on the side lately:
+          Some things I like doing when I'm not building stuff:
         </p>
         <ul className="list-disc ml-4">
           <li>
             <a href="/travel" className="font-body font-extralight underline">
-              Travel vlog/montage creation
+              Travel vlogs
             </a>
           </li>
           <li>
@@ -55,7 +55,7 @@ export default function About() {
           </li>
           <li>
             <a href="/lofi" className="font-body font-extralight underline">
-              Lofi remix production
+              Lofi remixes
             </a>
           </li>
         </ul>
