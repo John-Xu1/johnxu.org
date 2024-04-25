@@ -44,7 +44,7 @@ export default function ProjectDetails({
         </div>
         <p className="font-body font-light mt-8">{description}</p>
         <p className="font-body font-medium text-gray-400">
-          <br /> Libraries/Frameworks/APIs: {libs}
+          <br /> Technology and Tools: {libs}
         </p>
       </div>
     );

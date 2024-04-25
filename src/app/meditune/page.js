@@ -1,8 +1,4 @@
 "use client";
-import Image from "next/image";
-import Header from "../components/header";
-import { TbWindowMaximize } from "react-icons/tb";
-import { useEffect, useState } from "react";
 import ProjectDetails from "../components/project_details";
 
 export default function About() {

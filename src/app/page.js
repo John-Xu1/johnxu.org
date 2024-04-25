@@ -37,13 +37,13 @@ export default function Home() {
       hoverColor: "hover:bg-[#210D6A]",
     },
     {
-      name: "Minutes AI",
-      img: "/Minutes AI Mockups.svg",
+      name: "Reverie",
+      img: "/Reverie Mockups.svg",
       hoverColor: "hover:bg-[#2D1212]",
     },
   ];
 
-  const projectsLinks = ["/alleviate", "/meditune", "/focal", "/minutesai"];
+  const projectsLinks = ["/alleviate", "/meditune", "/focal", "/reverie"];
 
   const ProjectTab = ({ name, first, bgColor, onClick }) => {
     return (
