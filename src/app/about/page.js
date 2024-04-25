@@ -29,8 +29,8 @@ export default function About() {
           Computer Science & Finance at Duke.
           <br />
           <br />
-          As someone who born and raised in the Bay Area, I’m excited by the
-          ways technology can change the way we look at the world. I can recount
+          As someone who grew up in Silicon Valley, I’m excited by the ways
+          technology can change the way we look at the world. I can recount
           countless moments growing up where I would see a piece of tech that
           seemed nothing short of magic.
           <br />
