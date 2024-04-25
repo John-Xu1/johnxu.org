@@ -31,8 +31,8 @@ export default function About() {
           <br />
           As someone who grew up in Silicon Valley, I’m excited by the ways
           technology can change the way we look at the world. I can recount
-          countless moments growing up where I would see a piece of tech that
-          seemed nothing short of magic.
+          countless moments growing up where I would see tech that seemed
+          nothing short of magic.
           <br />
           <br />
           In the future, I hope to help create something that invokes in others
