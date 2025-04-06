@@ -72,15 +72,15 @@ export default function Home() {
       <div className="preview-container">
         <div className="background-image"></div>
         <p className="pl-0 md:pl-[10vw] pt-48 font-body font-extralight text-3xl md:text-4xl lg:text-5xl text-center md:text-left">
-          John Xu (Shoe) is a
+          Hi! My name is John Xu (Shoe). I like to
         </p>
         <div className="pl-0 md:pl-[10vw] pt-4">
           <div className="wrapper">
             <div className="words">
-              <span>code tinkerer</span>
-              <span>figma fiddler</span>
-              <span>founder</span>
-              <span>code tinkerer</span>
+              <span>tinker with code</span>
+              <span>fiddle with figma</span>
+              <span>build cool things</span>
+              <span>tinker with code</span>
             </div>
           </div>
         </div>
@@ -128,11 +128,11 @@ export default function Home() {
       </div>
       <div className="mt-24">
         <h1 className="font-heading font-light text-2xl sm:text-4xl flex justify-center w-screen text-center mt-80 sm:mt-0">
-          Reach out! Always happy to chat :)
+          Reach out! Always happy to chat :)  
         </h1>
         <div className="flex justify-center w-screen gap-8 py-28">
           <a
-            href="mailto:john.xu@duke.edu"
+            href="mailto:XuJohn400@gmail.com"
             className="flex justify-center"
             target="_blank"
           >

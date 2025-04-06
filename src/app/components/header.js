@@ -50,7 +50,7 @@ const Header = () => {
             {!isMobile && (
               <div className="flex gap-8 mr-[5vw]">
                 <a
-                  href="mailto:john.xu@duke.edu"
+                  href="mailto:XuJohn400@gmail.com"
                   className="flex justify-center"
                   target="_blank"
                 >

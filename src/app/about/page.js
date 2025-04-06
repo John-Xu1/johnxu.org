@@ -53,6 +53,14 @@ export default function About() {
               Pro bono design
             </a>
           </li>
+          <li>
+            <a href="/artwork" className="font-body font-extralight underline">
+              Digital Art
+            </a>
+          </li>
+          <li className="font-extralight">
+            Vintage Lighter Collecting
+          </li>
         </ul>
       </div>
     );
